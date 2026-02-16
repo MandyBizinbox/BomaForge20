@@ -1,0 +1,18 @@
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Env
+.env
+.env.local
+
+# Misc
+test_reports/

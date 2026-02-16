@@ -1,0 +1,184 @@
+{
+  "brand_identity": {
+    "name": "BOMA",
+    "tagline": "The Homeschool Hearth",
+    "mission": "To be the calm, organized center of the homeschooling family life, balancing parental control with childlike wonder.",
+    "emotional_tone": ["Warm", "Inviting", "Organized", "Playful", "Safe"],
+    "archetype": "The Nurturing Guide (Mix of Sage & Caregiver)"
+  },
+  "typography": {
+    "font_families": {
+      "headings": {
+        "name": "Fraunces",
+        "type": "Serif",
+        "weights": ["300", "600", "800"],
+        "usage": "H1, H2, H3, Hero Titles - Adds a storybook, literary quality."
+      },
+      "body": {
+        "name": "Nunito",
+        "type": "Sans-serif",
+        "weights": ["400", "600", "700"],
+        "usage": "UI elements, buttons, body text - Rounded terminals feel friendly and kid-safe."
+      }
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl font-black tracking-tight",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "caption": "text-sm font-medium tracking-wide text-muted-foreground uppercase"
+    }
+  },
+  "colors": {
+    "palette": {
+      "base": {
+        "background": "#FDFBF7",
+        "foreground": "#2A2A2A",
+        "card": "#FFFFFF",
+        "card_foreground": "#2A2A2A"
+      },
+      "primary": {
+        "DEFAULT": "#2D4F3F",
+        "foreground": "#FDFBF7",
+        "hover": "#223C30",
+        "description": "Deep Forest Green - Represents growth, stability, and nature."
+      },
+      "secondary": {
+        "DEFAULT": "#C06C47",
+        "foreground": "#FFFFFF",
+        "hover": "#A65A3B",
+        "description": "Warm Clay - Represents the hearth, warmth, and creativity."
+      },
+      "accent": {
+        "DEFAULT": "#E8D5B5",
+        "foreground": "#2D4F3F",
+        "description": "Sand/Parchment - Used for highlighted sections or soft backgrounds."
+      },
+      "kids_mode": {
+        "sunshine": "#F4C542",
+        "sky": "#4F9DCE",
+        "leaf": "#88C477",
+        "berry": "#E05A6D",
+        "description": "Vibrant but matte colors for the child interface. High contrast against white."
+      },
+      "functional": {
+        "success": "#88C477",
+        "warning": "#F4C542",
+        "error": "#E05A6D",
+        "info": "#4F9DCE"
+      }
+    }
+  },
+  "ui_components": {
+    "border_radius": {
+      "default": "rounded-2xl",
+      "card": "rounded-3xl",
+      "button": "rounded-full"
+    },
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(45,79,63,0.08)]",
+      "card_hover": "shadow-[0_8px_24px_rgba(45,79,63,0.12)]",
+      "button": "shadow-[0_4px_0_rgba(0,0,0,0.1)] active:shadow-none active:translate-y-1"
+    },
+    "cards": {
+      "style": "bg-white border border-[#E8D5B5]/50 p-6 or p-8 relative overflow-hidden",
+      "interaction": "transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-card-hover"
+    },
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground font-bold px-8 py-3 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20",
+      "secondary": "bg-secondary text-secondary-foreground font-bold px-8 py-3 rounded-full hover:bg-secondary/90",
+      "ghost": "text-primary font-bold hover:bg-primary/5 px-6 py-2 rounded-full"
+    }
+  },
+  "layout_strategies": {
+    "spacing": "Relaxed. Use p-6, p-8, gap-6, gap-8. Avoid tight clusters.",
+    "grids": {
+      "dashboard_parent": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "dashboard_child": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+      "masonry": "Use CSS columns or masonry grid for chore/task lists to feel organic like sticky notes."
+    },
+    "containers": "Max-width 1200px for dashboards, 800px for reading/content centered."
+  },
+  "motion": {
+    "philosophy": "Organic & Bouncy",
+    "transitions": {
+      "default": "transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)]",
+      "hover": "transform transition-transform duration-200 ease-out"
+    },
+    "animations": {
+      "fade_in": "animate-in fade-in zoom-in-95 duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+      "bounce_subtle": "animate-bounce-subtle"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle noise/grain overlay on backgrounds (opacity 0.03) to simulate paper.",
+    "icons": "Lucide React (rounded style) or Phosphor Icons (Duotone) for a softer look.",
+    "decorations": "Use abstract organic shapes (blobs, waves) in the background with low opacity (accent colors)."
+  },
+  "image_assets": {
+    "hero_family": {
+      "url": "https://images.unsplash.com/photo-1758598737990-83994c6a19d1?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Mother and daughter reading a book together on the couch",
+      "usage": "Landing page hero or auth screen background"
+    },
+    "child_creative": {
+      "url": "https://images.unsplash.com/photo-1741376042675-30d452cd89a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Child drawing a botanical illustration",
+      "usage": "Children's dashboard header or creative section"
+    },
+    "playful_objects": {
+      "url": "https://images.unsplash.com/photo-1768926366733-e686d8bfa4df?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Colorful pick-up sticks",
+      "usage": "Abstract background element or 'Fun/Break' section"
+    }
+  },
+  "component_instructions": {
+    "Shadcn": {
+      "modifications": [
+        "Change default radius to 1rem or 1.5rem",
+        "Increase default padding in Cards and Dialogs",
+        "Use Nunito for all UI text in components",
+        "Remove sharp corners from inputs and selects (make them rounded-xl)"
+      ]
+    },
+    "Navigation": {
+      "style": "Floating sidebar or top pill-nav. Do not use full-width rigid dark sidebars.",
+      "active_state": "bg-accent text-primary font-bold rounded-xl"
+    },
+    "Forms": {
+      "input_style": "bg-white border-2 border-transparent focus:border-secondary/50 focus:ring-4 focus:ring-secondary/10 rounded-xl px-4 py-3 shadow-sm transition-all placeholder:text-muted-foreground/50",
+      "labels": "font-bold text-primary mb-2 block"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install fonts: @fontsource/fraunces and @fontsource/nunito",
+    "Configure Tailwind theme to match the palette exactly.",
+    "Create a 'NoiseOverlay' component that adds a fixed grain texture to the body.",
+    "Use the 'kids_mode' palette when the user role is 'child'.",
+    "Avoid pure black (#000000). Use the dark forest green (#2D4F3F) or dark charcoal (#2A2A2A) for text.",
+    "Ensure all buttons have the 'bouncy' interaction (scale down slightly on click).",
+    "For the 'Weekly Planner', use a horizontal scrollable card list for mobile, and a grid for desktop.",
+    "Implement a toggle for 'Parent View' vs 'Child View' in development to easily test both personas."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts"
+  ]
+}

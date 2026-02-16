@@ -1,0 +1,19 @@
+{
+  "name": "BOMA - The Homeschool Hearth",
+  "short_name": "BOMA",
+  "description": "Family homeschool planner with curriculum, chores, allowance & messaging",
+  "start_url": "/today",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#2D4F3F",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSIzMiIgZmlsbD0iIzJENEYzRiIvPjx0ZXh0IHg9Ijk2IiB5PSIxMTYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGREZCRjciIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI3MiIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+PC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}

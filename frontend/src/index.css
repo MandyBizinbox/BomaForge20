@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300&family=Nunito:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 0 0% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+    --primary: 155 29% 25%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 17 51% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 34 52% 81%;
+    --accent-foreground: 155 29% 25%;
+    --muted: 34 20% 92%;
+    --muted-foreground: 0 0% 45%;
+    --destructive: 351 71% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 107 36% 62%;
+    --success-foreground: 0 0% 100%;
+    --warning: 44 89% 61%;
+    --warning-foreground: 0 0% 16%;
+    --info: 206 55% 56%;
+    --info-foreground: 0 0% 100%;
+    --border: 34 30% 88%;
+    --input: 34 30% 88%;
+    --ring: 155 29% 25%;
+    --radius: 1rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(40 33% 98%);
+  color: hsl(0 0% 16%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-bounce-subtle {
+  animation: bounceSub 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceSub {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn-primary {
+  @apply bg-[#2D4F3F] text-white font-bold px-8 py-3 rounded-full;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(45, 79, 63, 0.2);
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  @apply bg-[#C06C47] text-white font-bold px-8 py-3 rounded-full;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(192, 108, 71, 0.2);
+}
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+.btn-secondary:active {
+  transform: scale(0.95);
+}
+
+.card-boma {
+  @apply bg-white rounded-3xl p-6 border border-[#E8D5B5]/50;
+  box-shadow: 0 2px 8px rgba(45, 79, 63, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-boma:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(45, 79, 63, 0.12);
+}
+
+.input-boma {
+  @apply w-full bg-white border-2 border-transparent rounded-xl px-4 py-3 shadow-sm;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.input-boma:focus {
+  outline: none;
+  border-color: rgba(192, 108, 71, 0.5);
+  box-shadow: 0 0 0 4px rgba(192, 108, 71, 0.1);
+}
+.input-boma::placeholder {
+  color: hsl(0 0% 45% / 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(34 30% 88%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(34 20% 78%);
+}
